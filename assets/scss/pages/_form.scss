@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    nav{
+        width: 90%;
+        margin: auto;
+        .collapseDiv{
+            width: 80%;
+            display: flex;
+            justify-content:center;
+            li{
+                margin-left: 20px;
+                a{
+                    font-size: 15px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    font-weight: 500;
+                    color: $bg-second-color;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                     font-family: "Lora", serif;
+
+                    opacity: 1 !important;
+                    &:hover{
+                        color:$publish-one-color  !important;
+                        cursor: pointer;
+                        border-bottom: 2px solid $publish-second-color;
+                    }
+                     }
+                }
+            }
+        }
+    }
+#company{
+width: 100%;
+height: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 30px;
+background-image: url('https://preview.colorlib.com/theme/publishingcompany/images/bg_1.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+.container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .companyitem{
+        display: flex;
+        justify-content: flex-start; 
+        flex-direction: column;
+        text-align: justify;
+        padding: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        h1{
+            font-size: 50px;
+    color: $bg-second-color;
+    font-weight: 600;
+    font-family: "Lora", serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+            }
+            p{
+                font-size: 20px;
+                line-height: 1.5;
+                color: $text-color;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        .btn{
+            width: 58%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin: 10px;
+            #view{
+                width: 150px;
+                height: 50px;
+                border-radius: 7px;
+                background-color: $publish-one-color;
+                border: none;
+                color: $main-second-color;
+                font-weight: 600;
+                cursor: pointer;
+
+            }
+            #now{
+                width: 150px;
+                height: 50px;
+                padding: 10px;
+                margin-left: 5px;
+                border-radius: 5px;
+                background-color: $main-second-color;
+                color: #000000;
+                font-weight: 600;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+}
+#FormMethod{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    margin-top: 20px;
+    background-color: #F7F8F1;
+    background-position: center;
+    background-size: cover;
+    .container{
+        margin-top: 20px;
+        p{
+            font-size: large;
+            font-weight: 700;
+        }
+        label{
+            color: black;
+        }
+        input{
+            border: 2px solid black;
+        }
+    
+    }
+}
+#displayCard {
+    .container {
+        #display {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+
+            .box {
+                width: 250px;
+                padding: 25px;
+                background-color: $bg-color;
+                box-shadow: 0 1px 10px $bg-second-color;
+
+                span {
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+
+                button {
+                    color: $main-second-color;
+                    background-color:$main-color;
+                    transition: 1s;
+                    padding: 10px;
+                    border-radius: 20px;
+                    display: flex;
+                    gap: 10px;
+                    font-weight: 600;
+                    justify-content: center;
+                    align-items: center;
+
+                    &:hover {
+                       
+                        color: $main-second-color;
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:$bg-second-color ;
+    .container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .foot{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                color: $main-second-color;
+            }
+            i{
+                color: $main-second-color;
+            }
+        }
+    }
+}

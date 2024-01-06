@@ -1,0 +1,865 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+header nav {
+  width: 90%;
+  margin: auto;
+}
+header nav .collapseDiv {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+header nav .collapseDiv li {
+  margin-left: 20px;
+}
+header nav .collapseDiv li a {
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500;
+  color: #252525;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Lora", serif;
+  opacity: 1 !important;
+}
+header nav .collapseDiv li a:hover {
+  color: #95ADBE !important;
+  cursor: pointer;
+  border-bottom: 2px solid #5691bb;
+}
+
+#company {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-image: url("https://preview.colorlib.com/theme/publishingcompany/images/bg_1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#company .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#company .container .companyitem {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: justify;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#company .container .companyitem h1 {
+  font-size: 50px;
+  color: #252525;
+  font-weight: 600;
+  font-family: "Lora", serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#company .container .companyitem p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: gray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#company .container .companyitem .btn {
+  width: 58%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+#company .container .companyitem .btn #view {
+  width: 150px;
+  height: 50px;
+  border-radius: 7px;
+  background-color: #95ADBE;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+#company .container .companyitem .btn #now {
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000000;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+#total {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F4F0;
+}
+#total .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#total .container .totalitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+#total .container .totalitem h1 {
+  font-weight: 400;
+  font-size: 50px;
+  color: #252525;
+  font-family: "Lora", serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#total .container .totalitem span {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  color: gray;
+}
+
+#clients {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://preview.colorlib.com/theme/publishingcompany/images/bg_4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#clients .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#clients .container .clientsitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+#clients .container .clientsitem span {
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: relative;
+  color: #fff;
+}
+#clients .container .clientsitem h1 {
+  font-size: 45px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Lora", serif;
+}
+#clients .row {
+  margin: 10px;
+}
+#clients .row .card {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 20px;
+  bottom: -150px;
+}
+#clients .row .card .icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #5691bb;
+  border-radius: 50%;
+  padding-left: 15px;
+  padding-top: 10px;
+  top: -25px;
+  left: 0;
+}
+#clients .row .card .icon i {
+  font-size: 20px;
+}
+#clients .row .card p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: gray;
+  font-weight: 500;
+}
+#clients .row .card .text {
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#clients .row .card .text img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+#clients .row .card .text .txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+}
+#clients .row .card .text .txt h6 {
+  font-weight: 600;
+}
+#clients .row .card .text .txt span {
+  line-height: 1.5;
+  color: gray;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#ApiProducts {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3F3F3;
+}
+#ApiProducts .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#ApiProducts .container .ApiProductsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#ApiProducts .container .ApiProductsHeader h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-weight: 900;
+}
+#ApiProducts .container #productList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 10px;
+}
+#ApiProducts .container #productList .boxDiv {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 5px;
+}
+#ApiProducts .container #productList .boxDiv img {
+  width: 100%;
+  height: auto;
+}
+#ApiProducts .container #productList .boxDiv .title {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+#ApiProducts .container #productList .boxDiv .price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #D1002C;
+}
+#ApiProducts .container #productList .boxDiv button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #D1002C;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+}
+#ApiProducts .container #productList .boxDiv button:hover {
+  background-color: #252525;
+  cursor: pointer;
+}
+#ApiProducts .container #pagi {
+  margin-top: 20px;
+  width: 160px;
+  height: 40px;
+  border: none;
+  background-color: #252525;
+  color: #fff;
+  border-radius: 5px;
+}
+#ApiProducts .container #pagi:hover {
+  background-color: #D1002C;
+}
+
+#resent {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#resent .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#resent .container .resentheader {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#resent .container .resentheader span {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #D1002C;
+}
+#resent .container .resentheader h1 {
+  font-weight: 400;
+  font-size: 50px;
+  color: #252525;
+  font-family: "Lora", serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#resent .container .resentitem {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+}
+#resent .container .resentitem img {
+  width: 100%;
+  height: auto;
+}
+#resent .container .resentitem .date {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #f5f4f0;
+  margin: 0 auto;
+  margin-top: -60px;
+  padding-top: 8px;
+}
+#resent .container .resentitem .date h5 {
+  color: #5691bb;
+  font-size: 25px;
+  font-weight: 600;
+}
+#resent .container .resentitem .date h6 {
+  font-size: 13px;
+  font-weight: 700;
+}
+#resent .container .resentitem .date span {
+  font-size: 13px;
+  color: gray;
+}
+#resent .container .resentitem .date:hover {
+  cursor: pointer;
+  background-color: #5691bb;
+}
+#resent .container .resentitem .date:hover h5 {
+  color: #fff;
+}
+#resent .container .resentitem h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#resent .container .resentitem h3:hover {
+  color: #5691bb;
+  cursor: pointer;
+}
+#resent .container .resentitem p {
+  font-size: 16px;
+  color: gray;
+  font-weight: 600;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #252525;
+}
+footer .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer .container .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .foot span {
+  color: #fff;
+}
+footer .container .foot i {
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+header nav {
+  width: 90%;
+  margin: auto;
+}
+header nav .collapseDiv {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+header nav .collapseDiv li {
+  margin-left: 20px;
+}
+header nav .collapseDiv li a {
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500;
+  color: #252525;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Lora", serif;
+  opacity: 1 !important;
+}
+header nav .collapseDiv li a:hover {
+  color: #95ADBE !important;
+  cursor: pointer;
+  border-bottom: 2px solid #5691bb;
+}
+
+#company {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-image: url("https://preview.colorlib.com/theme/publishingcompany/images/bg_1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#company .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#company .container .companyitem {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: justify;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#company .container .companyitem h1 {
+  font-size: 50px;
+  color: #252525;
+  font-weight: 600;
+  font-family: "Lora", serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#company .container .companyitem p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: gray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#company .container .companyitem .btn {
+  width: 58%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+#company .container .companyitem .btn #view {
+  width: 150px;
+  height: 50px;
+  border-radius: 7px;
+  background-color: #95ADBE;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+#company .container .companyitem .btn #now {
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000000;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+#Productfiltered {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: #F3F3F3;
+}
+#Productfiltered .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#Product {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: #F3F3F3;
+}
+#Product .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#Product .container #products {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+}
+#Product .container #products .box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+}
+#Product .container #products .box img {
+  width: 100%;
+  height: auto;
+}
+#Product .container #products .box .title {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+#Product .container #products .box .price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #D1002C;
+}
+#Product .container #products .box button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #D1002C;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+}
+#Product .container #products .box button:hover {
+  background-color: #252525;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #252525;
+}
+footer .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer .container .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .foot span {
+  color: #fff;
+}
+footer .container .foot i {
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+header nav {
+  width: 90%;
+  margin: auto;
+}
+header nav .collapseDiv {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+header nav .collapseDiv li {
+  margin-left: 20px;
+}
+header nav .collapseDiv li a {
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500;
+  color: #252525;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Lora", serif;
+  opacity: 1 !important;
+}
+header nav .collapseDiv li a:hover {
+  color: #95ADBE !important;
+  cursor: pointer;
+  border-bottom: 2px solid #5691bb;
+}
+
+#company {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-image: url("https://preview.colorlib.com/theme/publishingcompany/images/bg_1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#company .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#company .container .companyitem {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: justify;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#company .container .companyitem h1 {
+  font-size: 50px;
+  color: #252525;
+  font-weight: 600;
+  font-family: "Lora", serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#company .container .companyitem p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: gray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#company .container .companyitem .btn {
+  width: 58%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+#company .container .companyitem .btn #view {
+  width: 150px;
+  height: 50px;
+  border-radius: 7px;
+  background-color: #95ADBE;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+#company .container .companyitem .btn #now {
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000000;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+#FormMethod {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  margin-top: 20px;
+  background-color: #F7F8F1;
+  background-position: center;
+  background-size: cover;
+}
+#FormMethod .container {
+  margin-top: 20px;
+}
+#FormMethod .container p {
+  font-size: large;
+  font-weight: 700;
+}
+#FormMethod .container label {
+  color: black;
+}
+#FormMethod .container input {
+  border: 2px solid black;
+}
+
+#displayCard .container #display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+#displayCard .container #display .box {
+  width: 250px;
+  padding: 25px;
+  background-color: #F3F3F3;
+  box-shadow: 0 1px 10px #252525;
+}
+#displayCard .container #display .box span {
+  font-weight: 500;
+  font-size: 18px;
+}
+#displayCard .container #display .box button {
+  color: #fff;
+  background-color: #D1002C;
+  transition: 1s;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+#displayCard .container #display .box button:hover {
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #252525;
+}
+footer .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer .container .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .foot span {
+  color: #fff;
+}
+footer .container .foot i {
+  color: #fff;
+}
